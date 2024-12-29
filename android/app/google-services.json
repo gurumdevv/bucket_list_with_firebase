@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "52139643164",
+    "project_id": "bucketlistwithfirebase-63d93",
+    "storage_bucket": "bucketlistwithfirebase-63d93.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52139643164:android:4307c9b43d4821a343aad9",
+        "android_client_info": {
+          "package_name": "com.example.bucket_list_with_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtvcCRbQLYpL81o24q13N615VSOh0ReZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
