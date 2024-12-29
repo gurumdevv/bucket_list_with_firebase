@@ -160,7 +160,9 @@ class _HomePageState extends State<HomePage> {
           TextButton(
             child: Text("로그아웃"),
             onPressed: () {
-              print("sign out");
+              // 로그아웃
+              context.read<AuthService>().signOut();
+
               // 로그인 페이지로 이동
               Navigator.pushReplacement(
                 context,
