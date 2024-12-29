@@ -92,6 +92,12 @@ class _LoginPageState extends State<LoginPage> {
                         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                           content: Text("로그인 성공"),
                         ));
+
+                        // HomePage로 이동
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(builder: (context) => HomePage()),
+                        );
                       },
                       onError: (err) {
                         // 에러 발생
