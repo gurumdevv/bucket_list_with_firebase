@@ -220,6 +220,9 @@ class _HomePageState extends State<HomePage> {
                     future: bucketService.read(user.uid),
                     builder: (context, snapshot) {
                       final documents = snapshot.data?.docs ?? [];
+                      if (documents.isEmpty) {
+                        return Center(child: Text("버킷 리스트를 작성해주세요."));
+                      }
                       return ListView.builder(
                         itemCount: documents.length,
                         itemBuilder: (context, index) {
@@ -242,6 +245,7 @@ class _HomePageState extends State<HomePage> {
                               icon: Icon(CupertinoIcons.delete),
                               onPressed: () {
                                 // 삭제 버튼 클릭시
+                                bucketService.delete(doc.id);
                               },
                             ),
                             onTap: () {
